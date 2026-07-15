@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <IsPackable>false</IsPackable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TinyBlueWhale.MinimalApi.Endpoints\TinyBlueWhale.MinimalApi.Endpoints.csproj" />
+    <ProjectReference Include="..\TinyBlueWhale.MinimalApi.Responses\TinyBlueWhale.MinimalApi.Responses.csproj" />
+    <ProjectReference Include="..\TinyBlueWhale.MinimalApi.Versioning\TinyBlueWhale.MinimalApi.Versioning.csproj" />
+    <ProjectReference Include="..\TinyBlueWhale.MinimalApi\TinyBlueWhale.MinimalApi.csproj" />
+  </ItemGroup>
+
+</Project>

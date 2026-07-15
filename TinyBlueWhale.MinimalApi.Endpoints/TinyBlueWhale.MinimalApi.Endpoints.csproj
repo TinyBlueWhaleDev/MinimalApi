@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackageId>TinyBlueWhale.MinimalApi.Endpoints</PackageId>
+    <Version>1.0.0-preview</Version>
+    <Authors>Marco Garza</Authors>
+    <Company>TinyBlueWhale</Company>
+    <Product>MinimalApi</Product>
+    <Copyright>Copyright © TinyBlueWhale. All rights reserved.</Copyright>
+
+    <Description>Modular endpoint discovery and automatic mapping for ASP.NET Core Minimal APIs.</Description>
+    <PackageTags>dotnet;aspnetcore;minimal-api;endpoints;endpoint-discovery;vertical-slice</PackageTags>
+
+    <RepositoryUrl>https://github.com/TinyBlueWhaleDev/MinimalApi</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/TinyBlueWhaleDev/MinimalApi</PackageProjectUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.3.10" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.16" />
+  </ItemGroup>
+
+</Project>

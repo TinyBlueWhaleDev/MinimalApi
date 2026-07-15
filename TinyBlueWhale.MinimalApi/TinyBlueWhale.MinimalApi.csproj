@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <PackageId>TinyBlueWhale.MinimalApi</PackageId>
+    <Version>1.0.0-preview</Version>
+    <Authors>Marco Garza</Authors>
+    <Company>TinyBlueWhale</Company>
+    <Product>MinimalApi</Product>
+    <Copyright>Copyright © TinyBlueWhale. All rights reserved.</Copyright>
+
+    <Description>Opinionated framework for modular and versioned ASP.NET Core Minimal APIs.</Description>
+    <PackageTags>dotnet;aspnetcore;minimal-api;endpoints;versioning;vertical-slice</PackageTags>
+                   
+    <RepositoryUrl>https://github.com/TinyBlueWhaleDev/MinimalApi</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/TinyBlueWhaleDev/MinimalApi</PackageProjectUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TinyBlueWhale.MinimalApi.Endpoints\TinyBlueWhale.MinimalApi.Endpoints.csproj" />
+    <ProjectReference Include="..\TinyBlueWhale.MinimalApi.Versioning\TinyBlueWhale.MinimalApi.Versioning.csproj" />
+  </ItemGroup>
+
+</Project>
