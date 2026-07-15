@@ -33,11 +33,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\README.md" Pack="true" PackagePath="\" />
-  </ItemGroup>
-
-
-  <ItemGroup>
     <ProjectReference Include="..\TinyBlueWhale.MinimalApi.Endpoints\TinyBlueWhale.MinimalApi.Endpoints.csproj" />
     <ProjectReference Include="..\TinyBlueWhale.MinimalApi.Versioning\TinyBlueWhale.MinimalApi.Versioning.csproj" />
   </ItemGroup>
