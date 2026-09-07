@@ -1,34 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-
-    <PackageId>TinyBlueWhale.MinimalApi.Versioning</PackageId>
-    <Version>1.0.0-preview</Version>
-    <Authors>Marco Garza</Authors>
-    <Company>TinyBlueWhale</Company>
-    <Product>MinimalApi</Product>
-    <Copyright>Copyright © TinyBlueWhale. All rights reserved.</Copyright>
-
+    <PackageId>TinyBlueWhale.MinimalApi.Versioning</PackageId>   
     <Description>Centralized API version registry and versioned route integration for ASP.NET Core Minimal APIs.</Description>
     <PackageTags>dotnet;aspnetcore;minimal-api;api-versioning;versioning</PackageTags>
-
-    <RepositoryUrl>https://github.com/TinyBlueWhaleDev/MinimalApi</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://github.com/TinyBlueWhaleDev/MinimalApi</PackageProjectUrl>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,9 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.1" />
-    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.16" />
+    <PackageReference Include="Asp.Versioning.Mvc" />
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" />    
   </ItemGroup>
 
 </Project>
