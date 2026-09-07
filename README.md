@@ -160,6 +160,7 @@ Compatible with:
 
 - .NET 8
 - .NET 9
+- .NET 10
 
 ---
 
@@ -221,7 +222,7 @@ The Playground serves as the reference implementation for every released package
 
 # Roadmap
 
-Current Preview
+Current
 
 - Endpoint Discovery
 - Endpoint Mapping
@@ -302,11 +303,12 @@ Every package is independently consumable.
 | Responses | ✅ |
 | .NET 8 | ✅ |
 | .NET 9 | ✅ |
+.NET 10  | ✅
 
 Current Version
 
 ```
-1.0.0-preview
+1.0.0
 ```
 
 ---
